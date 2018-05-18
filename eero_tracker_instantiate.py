@@ -135,9 +135,9 @@ if __name__ == '__main__':
         if args.l:
             phone_number = args.l
         else:
-            phone_number = raw_input('Your eero login (phone number): ')
+            phone_number = input('Your eero login (phone number): ')
         user_token = eero.login(phone_number)
-        verification_code = raw_input('Verification key from SMS: ')
+        verification_code = input('Verification key from SMS: ')
         eero.login_verify(verification_code, user_token)
         print('Login successful. eero.session created, you can now use the device_tracker.')
     else:
