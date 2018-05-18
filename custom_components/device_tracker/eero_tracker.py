@@ -18,7 +18,7 @@ import re
 import json
 import requests
 import homeassistant.helpers.config_validation as cv
-from homeassistant.components.device_tracker import (
+from custom_components.device_tracker import (
     DOMAIN, PLATFORM_SCHEMA, CONF_SCAN_INTERVAL, DeviceScanner)
 
 REQUIREMENTS = ['requests==2.13.0']
